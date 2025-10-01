@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "1e4366be-fc02-4818-93a2-b49a473ff139",
+		"name": "EmployeesApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46924728",
+		"_collection_link": "https://farahahmedabdelazimahmed.postman.co/workspace/Farah-Ahmed-AbdelAzim-Ahmed's-W~06312ec6-fef5-4507-898f-f35ecfe4e654/collection/46924728-1e4366be-fc02-4818-93a2-b49a473ff139?action=share&source=collection_link&creator=46924728"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7215/Api/V1/Employees/41cb837d-f0ae-4421-68a2-08de006ae1a5",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7215",
+					"path": [
+						"Api",
+						"V1",
+						"Employees",
+						"41cb837d-f0ae-4421-68a2-08de006ae1a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"address\": \"123 Street\",\r\n  \"age\": 30,\r\n  \"salary\": 50000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7215/Api/V1/Employees/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7215",
+					"path": [
+						"Api",
+						"V1",
+						"Employees",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7215/Api/V1/Employees",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7215",
+					"path": [
+						"Api",
+						"V1",
+						"Employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Fatima mohamed\",\r\n  \"address\": \"123 Street\",\r\n  \"age\": 30,\r\n  \"salary\": 50000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7215/Api/V1/Employees",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7215",
+					"path": [
+						"Api",
+						"V1",
+						"Employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
